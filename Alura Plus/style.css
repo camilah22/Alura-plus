@@ -4,13 +4,16 @@
 --botao-azul:#167bf7;
 --cinza-secundario:#C0C0C0;
 --cor-de-fundo:#00030C;
+--fonte-principal: "inter";
 
 }
 body {
 
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400px;
 
 
 }
@@ -26,7 +29,9 @@ background-size: contain;
 .container{
 height: 100vh;
 display: grid;
+grid-template-columns: 20% 20%;
 }
+
 
 .container__botao {
     background-color: var(--botao-azul);
@@ -35,6 +40,21 @@ display: grid;
     color: (var(--branco-principal));
     display: block;
 
+ 
 
+}
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
 
+.container__aviso{
+    
+    font-size: 12px;
+    color:var(--cinza-secundario);
+}
+.container__tittle{
+    font-size: 28px;
+    font-weight: 700;
+    
 }
